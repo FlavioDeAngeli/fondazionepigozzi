@@ -1,0 +1,189 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#download-statuto {
+  background-color: lightblue;
+}
+#download-statuto:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+#main-cover {
+  /*background-image: url("assets/scuola.jpg");*/
+  background-size: cover;
+  /* background-position: no-repeat fixed; */
+   background-color: rgb(100, 237, 184); 
+  display: flex;
+  height: 60vh;
+  padding: 0;
+}
+
+#left-cover {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  /* width: 30vw; */
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  /* padding: 2em; */
+}
+
+#left-cover h1 {
+  font-size: 3rem;
+}
+
+#left-cover p {
+  font-size: 1rem;
+}
+
+#curves {
+  /* width === container height */
+  width: 60vh;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#main {
+  min-height: 50vh;
+}
+
+.carousel-inner {
+  padding: 1em;
+  scroll-behavior: smooth;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  max-height: 100%;
+}
+
+/* @media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+} */
+
+/* #card1 {
+  position: fixed;
+  left: 0vw;
+}
+
+#card2 {
+  position: fixed;
+  left: 33.333333vw;
+}
+
+#card3 {
+  position: fixed;
+  left: 0vw;
+} */
+
+.p-separator {
+  width: 30vw;
+  margin: auto;
+}
+
+/* mobile version ------------------------------------------------------------------------------  */
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+/* desktop version ------------------------------------------------------------------------------  */
+/* @media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+} */
+
+@media (min-width: 992px) {
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  /* a:active::after {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  } */
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .p-separator {
+    width: 100%;
+    margin: auto;
+  }
+
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+  .card .img-wrapper {
+    height: 17em;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: block;
+  }
+
+  #left-cover h1 {
+    font-size: 3rem;
+  }
+
+  #left-cover p {
+    font-size: 1rem;
+  }
+}

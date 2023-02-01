@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fondazione Pigozzi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts/config.js"></script>
+  </head>
+
+  <body onresize="getWindowWidth()">
+    <!------------------------------------- DESKTOP NAVBAR -------------------------------->
+    <div class="container-fluid p-0 desktop">
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand col-6" href="index.html">
+            <img
+              src="assets/timbro.jpg"
+              alt="Logo"
+              width="30"
+              height="100%"
+              class="d-inline-block align-text-top me-3"
+            /><span class="lead text-white text-center"
+              >Fondazione Coniugi Pigozzi</span
+            ></a
+          >
+          <a href="pages/attivita.html" class="lead text-white">Attività</a>
+          <a href="pages/progetti.html" class="lead text-white">Progetti</a>
+          <a href="pages/storia.html" class="lead text-white">Storia</a>
+          <a href="pages/statuto.html" class="lead text-white">Statuto</a>
+          <a href="pages/consiglio.html" class="lead text-white">Consiglio</a>
+          <a href="pages/partners.html" class="lead text-white me-3"
+            >Partners</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <!------------------------------------ MOBILE NAVBAR ----------------------------------->
+    <nav class="navbar navbar-dark bg-dark fixed-top mobile text-center">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Fondazione Coniugi Pigozzi</a>
+        <div
+          class="offcanvas offcanvas-start text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Fondazione Coniugi Pigozzi
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 text-start"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="pages/attivita.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Attività
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <!-- Create an 'activity page' and jump to the specific part of the same page with links -->
+                  <li>
+                    <a class="dropdown-item" href="pages/attivita.html"
+                      >Attività 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/attivita.html"
+                      >Attività 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/attivita.html"
+                      >Attività 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="pages/progetti.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Progetti
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <!-- Create a 'projects page' and jump to the specific part of the same page with links -->
+                  <li>
+                    <a class="dropdown-item" href="pages/progetti.html"
+                      >Progetto 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/progetti.html"
+                      >Progetto 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/progetti.html"
+                      >Progetto 3</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/progetti.html"
+                      >Progetto 4</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="pages/storia.html"
+                  >Storia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/statuto.html">Statuto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/consiglio.html">Consiglio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/partners.html">Partners</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------------------------------------------------->
+    <div class="container-fluid" id="main-cover">
+      <div class="col-12 col-lg-4 pt-3 p-4" id="left-cover">
+        <h1 class="pt-5 pt-lg-0">Fondazione Coniugi Pigozzi</h1>
+        <p class="p-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In orci
+          lorem, porttitor nec vulputate sit amet, fermentum a purus....
+        </p>
+      </div>
+      <div class="" id="curves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 319">
+          <path
+            fill="#6495ed"
+            fill-opacity="1"
+            d="M0,256L48,256C96,256,192,256,288,229.3C384,203,480,149,576,138.7C672,128,768,160,864,181.3C960,203,1056,213,1152,224C1248,235,1344,245,1392,250.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!-----------------------------------   CONTENT   ------------------------------------->
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <div id="mainCarousel" class="carousel-inner p-5">
+        <div class="carousel-item active">
+          <div class="card m-5">
+            <div class="img-wrapper">
+              <img
+                src="assets/villa.jpg"
+                class="d-block w-100"
+                alt="Palazzo Pretorio"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Palazzo Pretorio</h5>
+              <p class="card-text">
+                Residenza dei coniugi Pigozzi, poi Istituto Agrario fino agli
+                anni '80. Ora residenza della famiglia Marcegaglia.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card m-5">
+            <div class="img-wrapper">
+              <img
+                src="assets/scuola_small.jpg"
+                class="d-block w-100"
+                alt="Istituto Superiore San Giovanni Bosco"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Istituto Superiore "San Giovanni Bosco"
+              </h5>
+              <p class="card-text">
+                Costruito alla fine degli anni '80 in convenzione tra Opera Pia
+                Coniugi Pigozzi e la Ditta Marcegaglia S.p.a. in virtù di
+                permuta del Palazzo Pretorio.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card m-5">
+            <div class="img-wrapper">
+              <img
+                src="assets/auditorium.jpg"
+                class="d-block w-100"
+                alt="Auditorium Pigozzi"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auditorium Pigozzi</h5>
+              <p class="card-text">
+                Sala dedicata ai Coniugi Pigozzi all'interno del complesso
+                scolastico di Gazoldo degli Ippoliti.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card m-5">
+            <div class="img-wrapper">
+              <img
+                src="assets/fondo_pellegrina.jpg"
+                class="d-block w-100"
+                alt="Fondo Pellegrina Nuova"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fondo Pellegrina Nuova</h5>
+              <p class="card-text">
+                Complesso residenziale fino agli anni '80 con annesso fondo
+                agricolo.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card m-5">
+            <div class="img-wrapper">
+              <img
+                src="assets/fondo_corte_bosco.jpg"
+                class="d-block w-100"
+                alt="Fondo Corte Bosco"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fondo Corte Bosco</h5>
+              <p class="card-text">
+                Costruito nel 1912 utilizzando mattoni prodotti nella contigua
+                fornace (oggi non più presente). Attualmente ad uso abitativo
+                per famiglie in stato di disagio.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev ms-4"
+        type="button"
+        onclick="prevCard()"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next me-4"
+        type="button"
+        onclick="nextCard()"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr />
+    <span>barra di visualizzazione carosello</span>
+    <hr />
+
+    <!------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0 bg-dark mt-5">
+      <div class="container py-4">
+        <div class="row gy-4 gx-5 d-flex justify-content-between">
+          <div class="col-lg-5 col-md-6">
+            <h5 class="text-white">Opera Pia Fondazione 'Coniugi Pigozzi'</h5>
+            <p class="small text-muted">
+              Via dell'Artigianato,7 46040 Gazoldo (MN)<br />
+              C.F-P.IVA : 80001790205
+            </p>
+            <p class="small text-muted mb-0">
+              &copy; Copyrights. All rights reserved.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-3">Contattaci</h5>
+            <p class="small text-muted">Scrivici una mail</p>
+            <form action="#">
+              <div class="input-group mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Recipient's username"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="button-addon2"
+                  type="button"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-------------------------------------------------------------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
